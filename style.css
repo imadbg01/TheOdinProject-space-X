@@ -1,0 +1,180 @@
+:root {
+    --clr-white: hsla(0, 0%, 100%, 0.769);
+    
+}
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(./assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--clr-white);
+    background-attachment: fixed;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+
+/* General */
+
+.wrapper {
+    min-height: 100%;
+    background-color: rgba(240, 244, 247, 0.079);
+}
+
+.container {
+    width: 80%;
+    padding-inline: 1rem;
+    margin-inline: auto;
+}
+
+/* Flex utilities */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1.5rem);
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-1 {
+    flex-grow: 1;
+}
+.flex-basis-100 {
+    flex-basis: 100%;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+/* Utilities */
+
+.fs-500 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.fs-large {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.max-w-md {
+    max-width: 6rem;
+}
+ /*  Components */
+
+.header {
+    padding: 1rem 0;
+}
+
+ .hero {
+     height: 55vh;
+     background-color: rgba(240, 4, 7, 0.029);
+     align-items: center;
+ }
+
+ .hero h1 {
+     letter-spacing: 2px;
+     margin-bottom: 1.2rem;
+ }
+
+ .hero p {
+     line-height: 1.6;
+ }
+
+ .btn {
+     display: inline-block;
+     padding: 1em 1.6em;
+     font-size: 1rem;
+     font-weight: 700;
+     background-color: hsla(0, 0%, 100%, 0.8);
+     color: hsl(3, 23%, 10%);
+     margin-top: 1rem;
+     border-radius: 2rem;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     transition: 240ms ease-in-out;
+ }
+
+.btn:hover {
+    background-color: hsla(0, 0%, 100%, 0.4);
+    
+}
+
+#team {
+    margin-top: 2rem;
+}
+
+#team h2 {
+    margin: 2rem auto;
+}
+
+#quote {
+    padding: 2rem 0;
+    margin: 2rem auto;
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+#quote blockquote {
+    padding: 1rem ;
+}
+#quote blockquote p {
+    padding: 1rem ;
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 1.3rem 0;
+    background-color: hsla(0, 0%, 100%, 0.2);
+}
